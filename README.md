@@ -7,6 +7,12 @@
 
 An intelligent web application that uses deep learning to detect and classify plant diseases from leaf images. Built with TensorFlow and Streamlit, this tool helps farmers and gardeners identify plant health issues quickly and accurately.
 
+## Project Preview
+
+![Plant disease CNN training history](screenshots/model-training-history.png)
+
+This preview was generated from the included `training_hist.json` artifact and shows the model's training and validation accuracy/loss trends across 10 epochs.
+
 ## 🌟 Features
 
 - **🔍 Real-time Disease Detection**: Upload plant leaf images and get instant disease predictions
@@ -109,6 +115,17 @@ Plant_Disease_Prediction/
 - **Validation Accuracy**: 95.99%
 - **Training Loss**: 0.055
 - **Validation Loss**: 0.143
+
+## Local Validation
+
+Generated `screenshots/model-training-history.png` from the included `training_hist.json` file.
+
+The Streamlit app was not launched in this local pass because the active Python environment did not include TensorFlow/Streamlit. To run the full app, install the project dependencies first:
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 ### Dataset
 - **Source**: [New Plant Diseases Dataset](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)
